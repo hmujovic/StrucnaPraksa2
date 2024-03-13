@@ -35,11 +35,11 @@ namespace API.Database.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    CategoryId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "longtext", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Description = table.Column<string>(type: "longtext", nullable: false),
-                    Quantity = table.Column<int>(type: "int", nullable: false)
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
